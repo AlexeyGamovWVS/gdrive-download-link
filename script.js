@@ -3,7 +3,7 @@ const OUTPUT_DRIVE_LINK = document.querySelector("#driveLinkResult");
 const GEN_DRIVE_BTN = document.querySelector("#genResDriveLink");
 const CLEAN_DRIVE_BTN = document.querySelector("#cleanDriveField");
 const COPY_DRIVE_BTN = document.querySelector("#copyResDriveLink");
-const BLOCK = document.querySelector('.container');
+const BLOCK = document.querySelector('.linkbuilder__container');
 
 GEN_DRIVE_BTN.addEventListener("click", generateDriveLink);
 CLEAN_DRIVE_BTN.addEventListener("click", cleanDriveLink);
