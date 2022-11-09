@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+		<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="section linkbuilder">
+      <div class="container linkbuilder__container">
+        <div class="linkbuilder__column linkbuilder__column-left">
+          <h2 class="linkbuilder__title">
+            01 Вставьте ссылку общего доступа к файлу с Google Drive:
+          </h2>
+          <p class="linkbuilder__description">
+            Чтобы получить данную ссылку, зайдите в гугл диск, нажмите правой
+            кнопкой на файле, затем «предоставить доступ» или «поделиться» или
+            «получить ссылку», выберите уровень доступа в выпадающем меню
+            (достаточно «только для чтения»), нажмите «копировать ссылку» и
+            кнопку «готово». Скопированную ссылку вставьте в поле ниже.
+          </p>
+          <input
+            class="linkbuilder__input"
+            type="url"
+            id="driveLink"
+            required
+            placeholder="https://drive.google.com/..."
+          />
+          <div class="linkbuilder__buttons">
+            <button class="linkbuilder__button linkbuilder__button-main" id="genResDriveLink">Получить ссылку</button>
+            <button class="linkbuilder__button linkbuilder__button-support" id="cleanDriveField">Очистить поле</button>
+          </div>
+        </div>
+        <div class="linkbuilder__column linkbuilder__column-right">
+          <h2 class="linkbuilder__title">02 Ваша ссылка на прямое скачивание с Google Drive:</h2>
+          <input
+            class="linkbuilder__input"
+            type="url"
+            id="driveLinkResult"
+            value=""
+            readonly
+          />
+					<div class="linkbuilder__buttons">
+						<button class="linkbuilder__button linkbuilder__button-main" id="copyResDriveLink">Скопировать в буфер</button>
+					</div>
+        </div>
+      </div>
+    </section>
+		<script src="./script.js"></script>
+  </body>
+</html>
